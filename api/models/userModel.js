@@ -19,7 +19,7 @@ function hasFav ({ id, photoId }) {
 }
 
 async function create ({ email, password }) {
-  const avatarHash = crypto.createHash('md5').update(email).digest("hex")
+  const avatarHash = crypto.createHash('md5').update(email).digest('hex')
   const avatar = `https://gravatar.com/avatar/${avatarHash}`
 
   // Create a user
